@@ -35,7 +35,7 @@ function removeAdmin() {
 
 function concatenateArray() {
   //Write your code here, just console.log
-  arr2.forEach((developer) => arr.push(developer));..
+  arr2.forEach((developer) => arr.push(developer));
   console.log(arr);
 }
 
