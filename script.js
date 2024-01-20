@@ -6,21 +6,37 @@ let arr = [
 
 // Don't worry about consoling these functions, they are already being called on the button clicks.
 // Please don't change anything in the index.html file.
+let arr2 = [
+  { id: 4, name: 'Mith', age: 29, profession: 'SDE' },
+  { id: 5, name: 'john', age: 24, profession: 'developer' },
+  { id: 6, name: 'rose', age: 44, profession: 'intern' },
+];
 
 function PrintDeveloper() {
   //Write your code here , just console.log
+  arr.map((developler)=>{
+    if(developler.profession === 'developer'){
+      console.log(developler);
+    }
+  })
 }
 
 function addData() {
   //Write your code here, just console.log
+  arr.push({id:4, name:"susan", age:"20", profession:"intern"});
+  console.log(arr);
 }
 
 function removeAdmin() {
   //Write your code here, just console.log
+  let arr1 = arr.filter((developer)=>developer.profession!=='admin');
+  console.log(arr1);
 }
 
 function concatenateArray() {
   //Write your code here, just console.log
+  arr2.forEach((developer) => arr.push(developer));
+  console.log(arr);
 }
 
 // Here is an example of how functions work,
